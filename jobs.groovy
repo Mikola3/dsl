@@ -16,7 +16,7 @@ return branches
 for (int i = 1; i <5; i++) {
     Jobs << "MNTLAB-${STUDENT_NAME}-child${i}-build-job"
     job("${Jobs.last()}"){
-      label("EPBYMINW7296")
+      //label("EPBYMINW7296")
       wrappers {
         preBuildCleanup()
       }
@@ -50,7 +50,7 @@ for (int i = 1; i <5; i++) {
    }
 }
 job(mainJob) {
-    label("EPBYMINW7296")
+    //label("EPBYMINW7296")
     wrappers {
         preBuildCleanup()
     }
